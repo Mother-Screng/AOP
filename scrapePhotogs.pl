@@ -14,6 +14,8 @@ use IO::Socket::SSL qw();
 #
 # Objective
 #
+#Trivial Change to make sure git is working with github
+#
 # Scrape AOP website to build CSV file to be imported into a spreadsheet
 # so that member data such as location (and hopefully "Based In") can be sorted and tracked
 #
