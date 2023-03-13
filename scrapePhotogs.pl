@@ -14,7 +14,7 @@ use IO::Socket::SSL qw();
 #
 # Objective
 #
-#Trivial Change to make sure git is working with github
+# Trivial Change to make sure git is working with github
 #
 # Scrape AOP website to build CSV file to be imported into a spreadsheet
 # so that member data such as location (and hopefully "Based In") can be sorted and tracked
@@ -24,11 +24,12 @@ use IO::Socket::SSL qw();
 #  
 #   Methodology:
 #
-#   Set up Global Hash to store results
+#   Set up Global Hash to store results - this is suspect and confusing.
+#   I need to store multiple locations, and multiple based in, per photog
 #
 #   - go to main page
-#   - grab all location codes
-#   - grab all Based In codes
+#   - grab all location codes (hash - number, name)
+#   - grab all Based In codes (hash?)
 #   - iternate over location codes
 #     - build GET url with location
 #       - scrape page - adding data to global hash
